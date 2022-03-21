@@ -109,7 +109,7 @@ public class JIVR {
 			sop("Sent " + p.getName() + " to the interview room:");
 
 			// checking if the outer queue has at lease 1 person
-			if (qList.size() > 1) {
+			if (qList.size() > 0) {
 				Person lp = qList.poll();
 				sop(lp.getName() + " with ID No. " + lp.getID() + " sent to lobby!");
 				sop("The length of the outer queue is now: " + qList.size());
